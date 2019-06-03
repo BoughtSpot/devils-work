@@ -292,4 +292,21 @@ textarea {
     }
 }
 
+.banner{
+    background-image: url(images/banner.jpg);
+    height: 500px;
+    background-size: cover;
+}
 
+h1 {
+    font-family: Times-Roman;
+    font-size: 4.5em;
+    color: #F3E6D8;
+    letter-spacing: -0.05px;
+}
+
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
