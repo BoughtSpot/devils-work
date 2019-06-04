@@ -1,3 +1,7 @@
+* {
+      box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -62,9 +66,10 @@ h6 {
 }
 
 .container{
-    width: 1200px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 2.5%;
 }
 
 main{
@@ -79,6 +84,27 @@ h2 {
     color: #FFFFFE;
     /* letter-spacing: -3.39px; */
     margin-bottom: 40px;
+}
+
+.profile--detail {
+    display: inline-block;
+    margin: 20px 0 30px;
+}
+
+.headshot {
+    float: left;
+    margin: 0 4% 3% 0;
+}
+
+.character {
+
+}
+.character--title {
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+.character--bio {
+
 }
 
 .parent {
