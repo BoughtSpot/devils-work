@@ -39,9 +39,9 @@ header{
 }
 
 .title-tagline {
-    position: absolute;
-    top: 30px;
-    padding: 0 5%;
+    padding: 50px 5% 0;
+    display: table;
+    margin: 0 auto;
 }
 
 h1 {
@@ -50,13 +50,15 @@ h1 {
     font-size: 4.5em;
     color: #F3E6D8;
     margin: 5px 0 10px;
-    /* letter-spacing: -0.05px; */
+    line-height: 1;
 }
 
-.crew-credits {
+h6 {
     position: absolute;
     bottom: 20px;
+    font-size: 19px;
     padding: 0 5%;
+    margin: 0;
 }
 
 .container{
@@ -77,4 +79,30 @@ h2 {
     color: #FFFFFE;
     /* letter-spacing: -3.39px; */
     margin-bottom: 40px;
+}
+
+.parent {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-template-rows: ;
+
+  grid-column-gap: 20px;
+
+  grid-row-gap: 0px;
+
+  .div1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .div2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .div3 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
 }
