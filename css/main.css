@@ -137,10 +137,14 @@ tr td:last-child {
 }
 
 
-.episode-grid {
-  /* width: 100%; */
+.episode--grid {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: max-content;
-  grid-gap: 15px;
+  grid-gap: 40px;
+}
+
+.episode--grid__image{
+    border: #FFFFFE 1px solid;
 }
