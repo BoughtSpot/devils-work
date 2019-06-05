@@ -179,99 +179,88 @@ tr td:last-child {
     height: 100%;
 }
 
-
-button:focus,
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none;
-}
-
-.tabs {
-  display: block;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  flex-wrap: wrap;
+*,
+*::before,
+*::after {
   margin: 0;
-  overflow: hidden;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.tabs [class^="tab"] label,
-.tabs [class*=" tab"] label {
-  color: #efedef;
-  cursor: pointer;
-  display: block;
-  font-size: 1.1em;
-  font-weight: 300;
-  line-height: 1em;
-  padding: 2rem 0;
+episodes {
+  max-width: 800px;
+  padding: 40px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+}
+
+.on-tabbed {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #abc;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
   text-align: center;
+  color: #abc;
+  border: 1px solid transparent;
 }
 
-.tabs [class^="tab"] [type="radio"],
-.tabs [class*=" tab"] [type="radio"] {
-  border-bottom: 1px solid rgba(239, 237, 239, 0.5);
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label[for*='1']:before {
+  content: '🇬🇧';
+}
+
+label[for*='2']:before {
+  content: '🇫🇷';
+}
+
+label:hover {
+  color: #789;
   cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+}
+
+input:checked+label {
+  color: #0af;
+  border: 1px solid #abc;
+  border-top: 2px solid #0af;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3,
+#tab4:checked~#content4 {
   display: block;
-  width: 100%;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
-.tabs [class^="tab"] [type="radio"]:hover,
-.tabs [class^="tab"] [type="radio"]:focus,
-.tabs [class*=" tab"] [type="radio"]:hover,
-.tabs [class*=" tab"] [type="radio"]:focus {
-  border-bottom: 1px solid #fd264f;
+@media screen and (max-width: 800px) {
+  label {
+    font-size: 0;
+  }
+
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
 }
 
-.tabs [class^="tab"] [type="radio"]:checked,
-.tabs [class*=" tab"] [type="radio"]:checked {
-  border-bottom: 2px solid #fd264f;
-}
-
-.tabs [class^="tab"] [type="radio"]:checked+div,
-.tabs [class*=" tab"] [type="radio"]:checked+div {
-  opacity: 1;
-}
-
-.tabs [class^="tab"] [type="radio"]+div,
-.tabs [class*=" tab"] [type="radio"]+div {
-  display: block;
-  opacity: 0;
-  padding: 2rem 0;
-  width: 90%;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.tabs .tab-2 {
-  width: 50%;
-}
-
-.tabs .tab-2 [type="radio"]+div {
-  width: 200%;
-  margin-left: 200%;
-}
-
-.tabs .tab-2 [type="radio"]:checked+div {
-  margin-left: 0;
-}
-
-.tabs .tab-2:last-child [type="radio"]+div {
-  margin-left: 100%;
-}
-
-.tabs .tab-2:last-child [type="radio"]:checked+div {
-  margin-left: -100%;
+@media screen and (max-width: 500px) {
+  label {
+    padding: 15px;
+  }
 }
