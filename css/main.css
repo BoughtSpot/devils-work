@@ -136,18 +136,6 @@ main{
     font-weight: bold;
 }
 
-.episode--grid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: max-content;
-  grid-gap: 40px;
-}
-
-.episode--grid__image{
-    border: #FFFFFE 1px solid;
-}
-
 .embed-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -166,6 +154,22 @@ main{
     height: 100%;
 }
 
+.episodes {
+  position: relative;
+}
+
+.episode--grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: max-content;
+  grid-gap: 40px;
+}
+
+.episode--grid__image {
+  border: #FFFFFE 1px solid;
+}
+
 .on-tabbed {
   display: none;
   padding: 20px 0 0;
@@ -176,7 +180,6 @@ main{
 }
 
 .on-tabbed > div {
-    transform: rotateX(-20deg);
     transform-origin: top center;
     transition: opacity .3s, transform 1s;
 }
@@ -195,7 +198,8 @@ label {
   border: 1px solid transparent;
   background: #fffffe;
   border-radius: 6px;
-  /* transition: all 0.3s ease-in-out; */
+  /* float: right; */
+  /* position: sticky; */
 }
 
 label:before {
