@@ -61,6 +61,10 @@ header{
     margin: 0 auto;
 }
 
+p {
+    margin: .5em 0 .8em;
+}
+
 h1 {
     font-family: Times-Roman;
     text-transform: uppercase;
@@ -88,14 +92,14 @@ h6 {
 main{
     background: #655A5A;
     color: #fffffe;
-    padding: 80px 0;
+    padding: 80px 0 50px;
 }
 
 h2 {
     font-family: Times-Bold;
     font-size: 2.75em;
     color: #FFFFFE;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .blurb {
@@ -106,23 +110,30 @@ h2 {
 
 .profile--detail {
     display: inline-block;
-    margin: 20px 0 30px;
+    margin: 20px 0 40px;
 }
 
 .headshot {
     width: 185px;
     height: auto;
     float: left;
-    margin: 0 4% 3% 0;
+    margin: 0 4% 0.6em 0;
 }
 
 .character {
 
 }
+
 .character--title {
-    margin: 0 0 10px;
+    margin: -3px 0 10px;
     text-transform: uppercase;
 }
+
+.lead {
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .character--bio {
 
 }
