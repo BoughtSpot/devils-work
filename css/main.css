@@ -49,19 +49,19 @@ img {
 }
 
 header{
+  display: grid;
+  text-align: center;
   background-image: url(../images/devils-work-banner.jpg);
   height: 540px;
   max-height: 95vh;
   background-size: cover;
-  text-align: center;
   margin: 0;
-  position: relative;
+  grid-template-rows: auto max-content;
+  grid-column-gap: 10px;
 }
 
 .title-tagline {
   padding: 50px 5% 0;
-  display: table;
-  margin: 0 auto;
 }
 
 p {
@@ -85,11 +85,10 @@ h2 {
 }
 
 h6 {
-  position: absolute;
-  bottom: 20px;
   font-size: 19px;
   padding: 0 5%;
-  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .container{
