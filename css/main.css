@@ -51,10 +51,11 @@ img {
 header{
   display: grid;
   text-align: center;
-  background-image: url(../images/devils-work-banner.jpg);
-  height: 540px;
-  max-height: 95vh;
+  background-image: url(../images/dw-banner-sparrow-header.jpg);
   background-size: cover;
+  background-position: center center;
+  height: 700px;
+  max-height: 95vh;
   margin: 0;
   grid-template-rows: auto max-content;
   grid-column-gap: 10px;
@@ -71,6 +72,7 @@ p {
 h1 {
   text-transform: uppercase;
   font-size: 4.5em;
+  font-weight: normal;
   color: #F3E6D8;
   margin: 5px 0 10px;
   line-height: 1;
@@ -87,7 +89,7 @@ h2 {
 h6 {
   font-size: 19px;
   padding: 0 5%;
-  text-align: center;
+  font-weight: normal;
   margin-bottom: 20px;
 }
 
