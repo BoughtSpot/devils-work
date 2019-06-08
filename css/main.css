@@ -58,7 +58,6 @@ header{
   max-height: 95vh;
   margin: 0;
   grid-template-rows: auto max-content;
-  grid-column-gap: 10px;
 }
 
 .title-tagline {
