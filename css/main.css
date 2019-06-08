@@ -249,6 +249,17 @@ input:checked+label {
   }
 }
 
+@media screen and (max-width: 720px) {
+  .blurb {
+    display: block;
+  }
+  .title, .about {
+    display: block;
+    width: 100%;
+  }
+
+}
+
 @media screen and (max-width: 500px) {
   label {
     padding: 15px;
