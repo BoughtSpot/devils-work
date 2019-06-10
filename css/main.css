@@ -192,8 +192,12 @@ main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: max-content;
-  grid-gap: 40px;
-  transition: all 0.3ms opacity;
+  grid-gap: 3%;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
 }
 
 .episode--grid__image {
