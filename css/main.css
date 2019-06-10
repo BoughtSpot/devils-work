@@ -164,7 +164,7 @@ main{
 }
 
 .tabs {
-  margin-top: -72px;
+  margin-top: -70px;
 }
 
 .lang--tabs {
@@ -193,6 +193,7 @@ main{
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: max-content;
   grid-gap: 40px;
+  transition: all 0.3ms opacity;
 }
 
 .episode--grid__image {
@@ -207,5 +208,12 @@ main{
     display: block;
     width: 100%;
   }
+  .tabs {
+    margin-top: 0;
+  }
+  .lang--tabs{
+    float:left;
+  }
+
 
 }
