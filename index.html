@@ -57,49 +57,50 @@
 
 		<section class="episodes container">
 			<h2>Screener Episodes</h2>
-			<ul class="tabs" role="tablist">
-				<li>
-					<input type="radio" name="tabs" id="tab1" checked />
-					<label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">Description</label>
-					<div id="tab-content1" class="tab-content" role="tabpanel" aria-labelledby="description" aria-hidden="false">
-						<div class="episode--grid episode--grid__en">
-							<figure>
-								<img class="episode--grid__image" src="images/devils-work-sparrow-episodes-1.jpg" alt="text">
-								<figcaption>Episode 1: English</figcaption>
-							</figure>
-							<figure>
-								<img class="episode--grid__image" src="images/devils-work-sparrow-episodes-2.jpg" alt="text">
-								<figcaption>Episode 2: English</figcaption>
-							</figure>
-							<figure>
-								<img class="episode--grid__image" src="images/devils-work-sparrow-episodes-3.jpg" alt="text">
-								<figcaption>Episode 3: English</figcaption>
-							</figure>
-						</div>
-					</div>
-				</li>
+			<div class="tabs">
 			
-				<li>
-					<input type="radio" name="tabs" id="tab2" />
-					<label for="tab2" role="tab" aria-selected="false" aria-controls="panel2" tabindex="0">Specification</label>
-					<div id="tab-content2" class="tab-content" role="tabpanel" aria-labelledby="specification" aria-hidden="true">
-						<div class="episode--grid episode--grid__fr">
-							<figure>
-								<img class="episode--grid__image" src="images/devils-work-sparrow-episodes-1.jpg" alt="text">
-								<figcaption>Episode 1: French</figcaption>
-							</figure>
-							<figure>
-								<img class="episode--grid__image" src="images/devils-work-sparrow-episodes-2.jpg" alt="text">
-								<figcaption>Episode 2: French</figcaption>
-							</figure>
-							<figure>
-								<img class="episode--grid__image" src="images/devils-work-sparrow-episodes-3.jpg" alt="text">
-								<figcaption>Episode 3: French</figcaption>
-							</figure>
-						</div>
+				<nav role='navigation'>
+					<ul class="lang--tabs">
+						<li><a id="tab-en">English</a></li>
+						<li><a id="tab-fr">French</a></li>
+					</ul>
+				</nav>
+			
+				<div id="tab-en-tg" class="active">
+					<div class="episode--grid episode--grid__en">
+						<figure>
+							<img class="episode--grid__image" id="vid-fr-1" src="images/devils-work-sparrow-episodes-1.jpg" alt="text">
+							<figcaption>Episode 1: English</figcaption>
+						</figure>
+						<figure>
+							<img class="episode--grid__image" id="vid-fr-2" src="images/devils-work-sparrow-episodes-2.jpg" alt="text">
+							<figcaption>Episode 2: English</figcaption>
+						</figure>
+						<figure>
+							<img class="episode--grid__image" id="vid-fr-3" src="images/devils-work-sparrow-episodes-3.jpg" alt="text">
+							<figcaption>Episode 3: English</figcaption>
+						</figure>
 					</div>
-				</li>
-			</ul>
+				</div>
+			
+				<div id="tab-fr-tg">
+					<div class="episode--grid episode--grid__fr">
+						<figure>
+							<img class="episode--grid__image" id="vid-fr-1" src="images/devils-work-sparrow-episodes-1.jpg" alt="text">
+							<figcaption>Episode 1: French</figcaption>
+						</figure>
+						<figure>
+							<img class="episode--grid__image" id="vid-fr-2" src="images/devils-work-sparrow-episodes-2.jpg" alt="text">
+							<figcaption>Episode 2: French</figcaption>
+						</figure>
+						<figure>
+							<img class="episode--grid__image" id="vid-fr-3" src="images/devils-work-sparrow-episodes-3.jpg" alt="text">
+							<figcaption>Episode 3: French</figcaption>
+						</figure>
+					</div>
+				</div>
+			
+			</div>
 		</section>
 
 		<section class="blurb container">
@@ -204,15 +205,12 @@
 	</main>
 
 
-
-
-
-
-
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
+	<!-- <script src="js/tabs.js"></script> -->
+	<script src="js/popup.js"></script>
 
 	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 	<script>

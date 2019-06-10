@@ -1,43 +1,23 @@
-$('.episode--grid__en').magnificPopup({
-    items: [
-        {
-            delegate: 'a',
-            src: 'https://vimeo.com/40004005',
-            type: 'iframe'
-        },
-        {
-            delegate: 'b',
-            src: 'https://vimeo.com/25037336',
-            type: 'iframe'
-        },
-        {
-            delegate: 'c',
-            src: 'https://vimeo.com/57486433',
-            type: 'iframe'
-        }
-    ]
+
+$('#tab-en').on('click', function(){
+    console.log('english clicked');
+    $('.episode--grid').hide();
+    // remove class on link
+    $('.episode--grid__en').show("slow");
+    // add class on new link
+    // show my id
 });
 
-$('.episode--grid__fr').magnificPopup({
-    items: [
-        {
-            delegate: 'a',
-            src: 'https://vimeo.com/99651914',
-            type: 'iframe'
-        },
-        {
-            delegate: 'b',
-            src: 'https://vimeo.com/99647025',
-            type: 'iframe'
-        },
-        {
-            delegate: 'c',
-            src: 'https://vimeo.com/96715060',
-            type: 'iframe'
-        }
-    ],
-    gallery: {
-        enabled: true
-    },
-    type: 'iframe'
+$('#tab-fr').on('click', function(){
+    console.log('french clicked');
+    $('.episode--grid').hide();
+    // remove class on link
+    $('.episode--grid__fr').show("slow");
+    // add class on new link
+    
+    // show my id
+});
+
+$(function () {
+    $('#tab-en').trigger('click');
 });
