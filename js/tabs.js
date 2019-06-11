@@ -1,46 +1,22 @@
-var Tabs = {
+$('#tab-en').on('click', function () {
+  console.log('english clicked');
+  $('.episode--grid').hide();
+  // remove class on link
+  $('.episode--grid__en').show().fadeTo();
+  // add class on new link
+  // show my id
+});
 
-  init: function () {
-    this.bindUIfunctions();
-    this.pageLoadCorrectTab();
-  },
+$('#tab-fr').on('click', function () {
+  console.log('french clicked');
+  $('.episode--grid').hide();
+  // remove class on link
+  $('.episode--grid__fr').show().fadeTo();
+  // add class on new link
 
-  bindUIfunctions: function () {
+  // show my id
+});
 
-    // Delegation
-    $(document)
-      .on("click", ".transformer-tabs a[href^='#']:not('.active')", function (event) {
-        Tabs.changeTab(this.hash);
-        event.preventDefault();
-      })
-      .on("click", ".transformer-tabs a.active", function (event) {
-        Tabs.toggleMobileMenu(event, this);
-        event.preventDefault();
-      });
-
-  },
-
-  changeTab: function (hash) {
-
-    var anchor = $("[href=" + hash + "]");
-    var div = $(hash);
-
-    anchor.addClass("active").parent().siblings().find("a").removeClass("active");
-
-    div.addClass("active").siblings().removeClass("active");
-
-    anchor.closest("ul").removeClass("open");
-
-  },
-
-  pageLoadCorrectTab: function () {
-    this.changeTab(document.location.hash);
-  },
-
-  toggleMobileMenu: function (event, el) {
-    $(el).closest("ul").toggleClass("open");
-  }
-
-}
-
-Tabs.init();
+$(function () {
+  $('#tab-en').trigger('click');
+});

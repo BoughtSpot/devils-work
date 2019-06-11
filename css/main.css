@@ -58,8 +58,8 @@ header{
   background-image: url(../images/dw-banner-sparrow-header.jpg);
   background-size: cover;
   background-position: center center;
-  height: 700px;
-  max-height: 95vh;
+  height: 800px;
+  max-height: 100vh;
   margin: 0;
   grid-template-rows: auto max-content;
 }
@@ -82,11 +82,15 @@ h1 {
 }
 
 h2 {
-  font-family: Times-Bold;
   font-size: 2.75em;
   color: #FFFFFE;
   margin: 10px 0 20px;
   margin-top: 15px;
+}
+
+h3 {
+  color: #F3E6D8;
+  font-weight: 400;
 }
 
 h6 {
