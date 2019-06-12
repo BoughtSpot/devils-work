@@ -106,13 +106,13 @@ h6 {
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 4%;
+  padding: 40px 4%;
 }
 
 main{
   background: #655A5A;
   color: #fffffe;
-  padding: 30px 0 50px;
+  padding: 0 0 50px;
 }
 
 .blurb {
@@ -186,6 +186,9 @@ main{
   list-style-type: none;
   display: inline;
   margin: 2.5px;
+}
+
+.lang--tabs li a{
   border-radius: 3px;
   background: #f5f5dc;
   padding: 10px 20px;
@@ -240,4 +243,10 @@ main{
   }
 
 
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    height: 900px;
+  }
 }
