@@ -7,16 +7,13 @@
 }
 
 body{
+  font-family: 'Times New Roman', Times, serif;
+  color: #222;
+  font-size: 1.2em;
+  line-height: 1.4;
   margin: 0;
   padding: 0;
   text-align: left;
-}
-
-html {
-  color: #222;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.2em;
-  line-height: 1.4;
 }
 
 ::-moz-selection,
@@ -85,8 +82,7 @@ h2 {
   font-size: 2.75em;
   font-weight: 400;
   color: #FFFFFE;
-  margin: 10px 0 20px;
-  margin-top: 15px;
+  margin: 10px 0 5px;
 }
 
 h3 {
@@ -105,7 +101,7 @@ h6 {
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 40px 4%;
+  padding: 35px 4%;
 }
 
 main{
