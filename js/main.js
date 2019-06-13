@@ -1,6 +1,6 @@
 
 $('#tab-en').on('click', function(){
-    console.log('english clicked');
+    // console.log('english clicked');
     $('.episode--grid').hide();
     // remove class on link
     $('.episode--grid__en').show().fadeTo();
@@ -9,7 +9,7 @@ $('#tab-en').on('click', function(){
 });
 
 $('#tab-fr').on('click', function(){
-    console.log('french clicked');
+    // console.log('french clicked');
     $('.episode--grid').hide();
     // remove class on link
     $('.episode--grid__fr').show().fadeTo();
