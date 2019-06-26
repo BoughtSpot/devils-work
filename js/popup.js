@@ -1,6 +1,6 @@
 $('#vid-en-1').magnificPopup({
   items: [{
-      src: 'https://vimeo.com/40004005',
+      src: 'https://vimeo.com/341636748',
       type: 'iframe'
     }],
   type: 'image'
@@ -8,7 +8,7 @@ $('#vid-en-1').magnificPopup({
 
 $('#vid-en-2').magnificPopup({
   items: [{
-      src: 'https://vimeo.com/25037336',
+      src: 'https://vimeo.com/341637328',
       type: 'iframe'
     }],
   type: 'image'
@@ -16,7 +16,7 @@ $('#vid-en-2').magnificPopup({
 
 $('#vid-en-3').magnificPopup({
   items: [{
-      src: 'https://vimeo.com/57486433',
+      src: 'https://vimeo.com/341637920',
       type: 'iframe'
     }],
   type: 'image'
@@ -24,7 +24,7 @@ $('#vid-en-3').magnificPopup({
 
 $('#vid-fr-1').magnificPopup({
   items: [{
-      src: 'https://vimeo.com/99651914',
+      src: 'https://vimeo.com/341626457',
       type: 'iframe'
     }],
   type: 'image'
@@ -32,7 +32,7 @@ $('#vid-fr-1').magnificPopup({
 
 $('#vid-fr-2').magnificPopup({
   items: [{
-      src: 'https://vimeo.com/99647025',
+      src: 'https://vimeo.com/341629067',
       type: 'iframe'
     }],
   type: 'image'
@@ -40,7 +40,7 @@ $('#vid-fr-2').magnificPopup({
 
 $('#vid-fr-3').magnificPopup({
   items: [{
-      src: 'https://vimeo.com/96715060',
+      src: 'https://vimeo.com/341633529',
       type: 'iframe'
     }],
   type: 'image'
