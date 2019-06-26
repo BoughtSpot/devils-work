@@ -143,9 +143,6 @@ main{
 .character--title {
   margin: -3px 0 10px;
   text-transform: uppercase;
-}
-
-.lead {
   font-size: 30px;
   font-weight: bold;
 }
@@ -169,7 +166,7 @@ main{
 }
 
 .tabs {
-  margin-top: -70px;
+  margin-top: -60px;
 }
 
 .lang--tabs {
